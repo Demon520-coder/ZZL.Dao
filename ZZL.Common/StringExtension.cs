@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,21 @@ namespace ZZL.Common
             int.TryParse(strSource, out defVal);
 
             return defVal;
+        }
 
+        public static string CreateToMD5(this string strSource)
+        {
+            MD5 md = MD5.Create();
+
+            byte[] by = md.ComputeHash(Encoding.UTF8.GetBytes(strSource));
+
+            StringBuilder strBulider = new StringBuilder(200);
+            foreach (var item in by)
+            {
+                strBulider.Append(item.ToString("X2"));
+            }
+
+            return strBulider.ToString();
         }
     }
 }
