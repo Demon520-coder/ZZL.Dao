@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZL.Common", "ZZL.Common\ZZ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZL.DataAccess", "ZZL.DataAccess\ZZL.DataAccess.csproj", "{ABAC24E7-5017-46E5-BDA5-FC8D86A2CEA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BDC8B432-C414-4C20-BF01-F45066D86A4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ABAC24E7-5017-46E5-BDA5-FC8D86A2CEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABAC24E7-5017-46E5-BDA5-FC8D86A2CEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABAC24E7-5017-46E5-BDA5-FC8D86A2CEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC8B432-C414-4C20-BF01-F45066D86A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC8B432-C414-4C20-BF01-F45066D86A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC8B432-C414-4C20-BF01-F45066D86A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC8B432-C414-4C20-BF01-F45066D86A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,7 +23,7 @@ namespace ZZL.Common
             return defVal;
         }
 
-        public static string CreateToMD5(this string strSource)
+        public static string ToMD5(this string strSource)
         {
             MD5 md = MD5.Create();
 
