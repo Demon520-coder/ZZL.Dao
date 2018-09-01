@@ -41,5 +41,10 @@ namespace ZZL.DataAccess
 
         bool DeleteByPhysic(TKey key, string sqlId = "DeleteByPhysic");
 
+
+        IEnumerable<TOut> GetList<TOut>(object param, string sqlId = "GetList");
+
+
+        IEnumerable<TOut> GetListByPage<TOut>(object param, string sqlId = "GetListByPage");
     }
 }

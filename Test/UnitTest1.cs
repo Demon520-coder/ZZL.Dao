@@ -71,5 +71,12 @@ namespace Test
             Assert.IsTrue(service.Update(customer), "更新失败");
         }
 
+        [TestMethod]
+        public void GetCustomers()
+        {
+            var list = service.GetList<TestModel>(null, "GetCustomers");
+
+            Assert.IsTrue(list.Count() > 0);
+        }
     }
 }

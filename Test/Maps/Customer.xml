@@ -70,5 +70,11 @@
       ,[fax] =@fax
       WHERE id=@id
     </Statement>
+
+    <Statement Id="GetCustomers">
+      SELECT companyname AS CName, 
+             contactname AS ConName 
+      FROM [Sales].[Customers]
+    </Statement>
   </Statements>
 </SmartSqlMap>

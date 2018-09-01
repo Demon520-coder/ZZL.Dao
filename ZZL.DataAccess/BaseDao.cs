@@ -50,9 +50,29 @@ namespace ZZL.DataAccess
             });
         }
 
+        public IEnumerable<TOut> GetList<TOut>(object param, string sqlId = "GetList")
+        {
+            return sqlMapper.Query<TOut>(new RequestContext
+            {
+                Scope = Scope,
+                SqlId = sqlId,
+                Request = param
+            });
+        }
+
         public IEnumerable<T> GetListByPage(object param, string sqlId = "GetListByPage")
         {
             return sqlMapper.Query<T>(new RequestContext
+            {
+                Scope = Scope,
+                SqlId = sqlId,
+                Request = param
+            });
+        }
+
+        public IEnumerable<TOut> GetListByPage<TOut>(object param, string sqlId = "GetListByPage")
+        {
+            return sqlMapper.Query<TOut>(new RequestContext
             {
                 Scope = Scope,
                 SqlId = sqlId,
