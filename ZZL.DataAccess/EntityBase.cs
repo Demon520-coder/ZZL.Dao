@@ -8,7 +8,8 @@ namespace ZZL.DataAccess
 {
     public class EntityBase<TKey>
     {
-        TKey Id { get; set; }
+
+        public TKey Id { get; set; }
 
         public string Remark { get; set; }
 
